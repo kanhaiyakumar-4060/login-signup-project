@@ -1,0 +1,30 @@
+<%- include('common/header') -%>
+<div class="row login">
+    <h3 class="heading">Session Login Logout</h3><br/>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-6">
+
+        <form autocomplete="off" action="/add-user" method="post">
+            <div class="mb-3">
+                <label class="form-label">User Name</label>
+                <input type="text" class="form-control" name="userName" value="">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" name="emailId" autocomplete="off">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" autocomplete="off">
+            </div>
+            <br/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/login"> <button type="button" id="addUserBtn" class="btn btn-success">Back</button>
+            </a>
+        </form>
+    </div>
+
+</div>
+
+<%- include('common/footer') -%>
